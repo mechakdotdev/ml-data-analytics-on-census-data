@@ -21,23 +21,18 @@ from scipy import stats
 import seaborn as sns
 import warnings
 warnings.filterwarnings('ignore')
-# Input data files are available in the read-only "../input/" directory
-# For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory
 
 import os
 for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
-        print(os.path.join(dirname, filename))
-
-# You can write up to 5GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All" 
-# You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
+        print(os.path.join(dirname, filename)) 
 
 #redefine missing values
 missing_values = [" ?", "n/a","--", "nan"]
 data = pd.read_csv("../input/thedata/adult.csv", na_values = missing_values)
 data[data == '?'] = np.nan #helps machine realise that ? values are nan
 for col in ['work_class', 'occupation', 'nativecountry']:
-    data[col].fillna(data[col].mode()[0], inplace=True) #replace missing values with mode
+    data[col].fillna(data[col].mode()[0], inplace=True) #replace missing values with mode value
 
 X = data.drop(['under_over'], axis=1)
 
@@ -105,16 +100,16 @@ axisX=accuracyList
 sns.barplot(x=axisX,y=axisY)
 plt.xlabel('Accuracy')
 
-#data.sample(10)
-#data.isna().values.any() #check if any values are missing (result returns false as it doesn't recognise ? as missing values)
-#data.shape #find the shape of the dataset (result: 32651 instances split into 15 features)
+data.sample(10)
+data.isna().values.any() #check if any values are missing (result returns false as it doesn't recognise ? as missing values)
+data.shape #find the shape of the dataset (result: 32651 instances split into 15 features)
 
-#data.info() # to check data types and other info; this tells us there are 5 numerical features and 9 categorical features
+data.info() # to check data types and other info; this tells us there are 5 numerical features and 9 categorical features
 
-#data["age"].hist(figsize=(10,10))
-#plt.xlabel('Age')
-#plt.ylabel('Count')
-#plt.show()
+data["age"].hist(figsize=(10,10))
+plt.xlabel('Age')
+plt.ylabel('Count')
+plt.show()
 
 #data["fnlwgt"].hist(figsize=(10,10))
 #plt.xlabel('Final Weight')
