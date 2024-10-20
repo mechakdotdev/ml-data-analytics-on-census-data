@@ -111,224 +111,224 @@ plt.xlabel('Age')
 plt.ylabel('Count')
 plt.show()
 
-#data["fnlwgt"].hist(figsize=(10,10))
-#plt.xlabel('Final Weight')
-#plt.ylabel('Count')
-#plt.show()
+data["fnlwgt"].hist(figsize=(10,10))
+plt.xlabel('Final Weight')
+plt.ylabel('Count')
+plt.show()
 
-#data["education_num"].hist(figsize=(10,10))
-#plt.xlabel('Educational Number')
-#plt.ylabel('Count')
-#plt.show()
+data["education_num"].hist(figsize=(10,10))
+plt.xlabel('Educational Number')
+plt.ylabel('Count')
+plt.show()
 
-#data["capital_gain"].hist(figsize=(10,10))
-#plt.xlabel('Capital Gain')
-#plt.ylabel('Count')
-#plt.show()
+data["capital_gain"].hist(figsize=(10,10))
+plt.xlabel('Capital Gain')
+plt.ylabel('Count')
+plt.show()
 
-#data["capital_loss"].hist(figsize=(10,10))
-#plt.xlabel('Capital Loss')
-#plt.ylabel('Count')
-#plt.show()
+data["capital_loss"].hist(figsize=(10,10))
+plt.xlabel('Capital Loss')
+plt.ylabel('Count')
+plt.show()
 
-#data["hours_pw"].hist(figsize=(10,10))
-#plt.xlabel('Hours worked (per week)')
-#plt.ylabel('Count')
-#plt.show()
-
-
-
-#plt.figure(figsize=(15,9))
-#x = sns.countplot(x="work_class", data=data)
-#for p in x.patches:
-#    height = p.get_height()
-#    x.text(p.get_x()+p.get_width()/2.,
-#            height + 3,
-#            '{:1.2f}'.format((height/total)*100),
-#            ha="center") 
-#plt.show()
-
-#x = sns.countplot(x="education", data=data)
-#for p in x.patches:
-#    height = p.get_height()
-#    x.text(p.get_x()+p.get_width()/2.,
-#            height + 3,
-#            '{:1.2f}'.format((height/total)*100),
-#            ha="center") 
-#plt.show()
-
-#x = sns.countplot(x="marital_status", data=data)
-#for p in x.patches:
-#    height = p.get_height()
-#    x.text(p.get_x()+p.get_width()/2.,
-#            height + 3,
-#            '{:1.2f}'.format((height/total)*100),
-#            ha="center") 
-#plt.show()
-
-#x = sns.countplot(x="occupation", data=data)
-#for p in x.patches:
-#    height = p.get_height()
-#    x.text(p.get_x()+p.get_width()/2.,
-#            height + 3,
-#            '{:1.2f}'.format((height/total)*100),
-#            ha="center") 
-#plt.show()
-
-#x = sns.countplot(x="relationship", data=data)
-#for p in x.patches:
-#    height = p.get_height()
-#    x.text(p.get_x()+p.get_width()/2.,
-#            height + 3,
-#            '{:1.2f}'.format((height/total)*100),
-#            ha="center") 
-#plt.show()
-
-#x = sns.countplot(x="sex", data=data)
-#for p in x.patches:
-#    height = p.get_height()
-#    x.text(p.get_x()+p.get_width()/2.,
-#            height + 3,
-#            '{:1.2f}'.format((height/total)*100),
-#            ha="center") 
-#plt.show()
-
-#x = sns.countplot(x="race", data=data)
-#for p in x.patches:
-#    height = p.get_height()
-#    x.text(p.get_x()+p.get_width()/2.,
-#            height + 3,
-#            '{:1.2f}'.format((height/total)*100),
-#            ha="center") 
-#plt.show()
-
-#x = sns.countplot(x="nativecountry", data=data)
-#for p in x.patches:
-#    height = p.get_height()
-#    x.text(p.get_x()+p.get_width()/2.,
-#            height + 3,
-#            '{:1.2f}'.format((height/total)*100),
-#            ha="center") 
-#plt.show()
-
-#x = sns.countplot(x="under_over", data=data)
-#for p in x.patches:
-#    height = p.get_height()
-#    x.text(p.get_x()+p.get_width()/2.,
-#            height + 3,
-#            '{:1.2f}'.format((height/total)*100),
-#            ha="center") 
-#plt.show()
-
-#x = sns.countplot(x="sex", data=data)
-#for p in x.patches:
-#    height = p.get_height()
-#    x.text(p.get_x()+p.get_width()/2.,
-#            height + 3,
-#            '{:1.2f}'.format((height/total)*100),
-#            ha="center") 
-#plt.show()
-
-#fig = plt.figure(figsize=(15,9))
-#crosstab2=pd.crosstab(data["age"],data["under_over"], normalize='index', margins=False)*100
-#print(crosstab2)
-#crosstab2.plot(kind = 'bar', stacked = True)
-
-#fig = plt.figure(figsize=(15,9))
-#crosstab2=pd.crosstab(data["work_class"],data["under_over"], normalize='index', margins=False)*100
-#print(crosstab2)
-#crosstab2.plot(kind = 'bar', stacked = True)
-
-#fig = plt.figure(figsize=(15,9))
-#crosstab2=pd.crosstab(data["education"],data["under_over"], normalize='index', margins=False)*100
-#print(crosstab2)
-#crosstab2.plot(kind = 'bar', stacked = True)
-
-#fig = plt.figure(figsize=(15,9))
-#crosstab2=pd.crosstab(data["education_num"],data["under_over"], normalize='index', margins=False)*100
-#print(crosstab2)
-#crosstab2.plot(kind = 'bar', stacked = True)
-
-#fig = plt.figure(figsize=(15,9))
-#crosstab2=pd.crosstab(data["marital_status"],data["under_over"], normalize='index', margins=False)*100
-#print(crosstab2)
-#crosstab2.plot(kind = 'bar', stacked = True)
-
-#fig = plt.figure(figsize=(15,9))
-#crosstab2=pd.crosstab(data["occupation"],data["under_over"], normalize='index', margins=False)*100
-#print(crosstab2)
-#crosstab2.plot(kind = 'bar', stacked = True)
-
-#fig = plt.figure(figsize=(15,9))
-#crosstab2=pd.crosstab(data["relationship"],data["under_over"], normalize='index', margins=False)*100
-#print(crosstab2)
-#crosstab2.plot(kind = 'bar', stacked = True)
-
-#fig = plt.figure(figsize=(15,9))
-#crosstab2=pd.crosstab(data["race"],data["under_over"], normalize='index', margins=False)*100
-#print(crosstab2)
-#crosstab2.plot(kind = 'bar', stacked = True)
-
-#fig = plt.figure(figsize=(15,9))
-#crosstab2=pd.crosstab(data["sex"],data["under_over"], normalize='index', margins=False)*100
-#print(crosstab2)
-#crosstab2.plot(kind = 'bar', stacked = True)
-
-#plt.figure(figsize=(12, 8))
-#sns.boxplot(x="fnlwgt", y="under_over", data=data)
-#plt.show()
-
-#plt.figure(figsize=(12, 8))
-#sns.boxplot(x="capital_gain", y="under_over", data=data)
-#plt.show()
-
-#plt.figure(figsize=(12, 8))
-#sns.boxplot(x="capital_loss", y="under_over", data=data)
-#plt.show()
-
-#plt.figure(figsize=(12, 8))
-#sns.boxplot(x="hours_pw", y="under_over", data=data)
-#plt.show()
+data["hours_pw"].hist(figsize=(10,10))
+plt.xlabel('Hours worked (per week)')
+plt.ylabel('Count')
+plt.show()
 
 
-#box plots to identify outliers
-#num_feat = data.select_dtypes(include=['int64']).columns
-#for i in range(6):
-#    plt.subplot(2,3,i+1)
-#    plt.boxplot(data[num_feat[i]])
-#    plt.title(num_feat[i],color="g",fontsize=22)
-#    plt.yticks(fontsize=15)
-#    plt.xticks(fontsize=15)
-#plt.show()
 
-#removing outliers through winsorization
-#from scipy.stats.mstats import winsorize
-#data["age"]           = winsorize(data["age"],(0,0.15))
-#data["fnlwgt"]        = winsorize(data["fnlwgt"],(0,0.15))
-#data["capital_gain"]  = winsorize(data["capital_gain"],(0,0.099))
-#data["capital_loss"]  = winsorize(data["capital_loss"],(0,0.099))
-#data["hours_pw"]      = winsorize(data["hours_pw"],(0.12,0.18))
+plt.figure(figsize=(15,9))
+x = sns.countplot(x="work_class", data=data)
+for p in x.patches:
+   height = p.get_height()
+   x.text(p.get_x()+p.get_width()/2.,
+           height + 3,
+           '{:1.2f}'.format((height/total)*100),
+           ha="center") 
+plt.show()
 
-#plt.rcParams['figure.figsize'] = (25,7)
+x = sns.countplot(x="education", data=data)
+for p in x.patches:
+   height = p.get_height()
+   x.text(p.get_x()+p.get_width()/2.,
+           height + 3,
+           '{:1.2f}'.format((height/total)*100),
+           ha="center") 
+plt.show()
 
-#baslik_font = {'family':'arial','color':'red','weight':'bold','size':25}
+x = sns.countplot(x="marital_status", data=data)
+for p in x.patches:
+   height = p.get_height()
+   x.text(p.get_x()+p.get_width()/2.,
+           height + 3,
+           '{:1.2f}'.format((height/total)*100),
+           ha="center") 
+plt.show()
 
-#col_list=['age',"fnlwgt",'capital_gain', 'capital_loss', 'hours_pw']
+x = sns.countplot(x="occupation", data=data)
+for p in x.patches:
+   height = p.get_height()
+   x.text(p.get_x()+p.get_width()/2.,
+           height + 3,
+           '{:1.2f}'.format((height/total)*100),
+           ha="center") 
+plt.show()
 
-#for i in range(5):
-#    plt.subplot(1,5,i+1)
-#    plt.boxplot(data[col_list[i]])
-#    plt.title(col_list[i],fontdict=baslik_font)
+x = sns.countplot(x="relationship", data=data)
+for p in x.patches:
+   height = p.get_height()
+   x.text(p.get_x()+p.get_width()/2.,
+           height + 3,
+           '{:1.2f}'.format((height/total)*100),
+           ha="center") 
+plt.show()
 
-#plt.show()
+x = sns.countplot(x="sex", data=data)
+for p in x.patches:
+   height = p.get_height()
+   x.text(p.get_x()+p.get_width()/2.,
+           height + 3,
+           '{:1.2f}'.format((height/total)*100),
+           ha="center") 
+plt.show()
 
-#data.head(10)
+x = sns.countplot(x="race", data=data)
+for p in x.patches:
+   height = p.get_height()
+   x.text(p.get_x()+p.get_width()/2.,
+           height + 3,
+           '{:1.2f}'.format((height/total)*100),
+           ha="center") 
+plt.show()
 
-#numerical = ['int64']
-#numericData = data.select_dtypes(include=numerical) #organise numerical data to be parsed separately
+x = sns.countplot(x="nativecountry", data=data)
+for p in x.patches:
+   height = p.get_height()
+   x.text(p.get_x()+p.get_width()/2.,
+           height + 3,
+           '{:1.2f}'.format((height/total)*100),
+           ha="center") 
+plt.show()
 
-#categorical = ['object']
-#categoricData = data.select_dtypes(include=categorical) #organise categorical data to be parsed separately
+x = sns.countplot(x="under_over", data=data)
+for p in x.patches:
+   height = p.get_height()
+   x.text(p.get_x()+p.get_width()/2.,
+           height + 3,
+           '{:1.2f}'.format((height/total)*100),
+           ha="center") 
+plt.show()
 
-#print(numericData.describe()) #describe numerical dataset and return min/max/std etc
-#print("Mode", categoricData.mode()) #display mode (most frequent attributes)
+x = sns.countplot(x="sex", data=data)
+for p in x.patches:
+   height = p.get_height()
+   x.text(p.get_x()+p.get_width()/2.,
+           height + 3,
+           '{:1.2f}'.format((height/total)*100),
+           ha="center") 
+plt.show()
+
+fig = plt.figure(figsize=(15,9))
+crosstab2=pd.crosstab(data["age"],data["under_over"], normalize='index', margins=False)*100
+print(crosstab2)
+crosstab2.plot(kind = 'bar', stacked = True)
+
+fig = plt.figure(figsize=(15,9))
+crosstab2=pd.crosstab(data["work_class"],data["under_over"], normalize='index', margins=False)*100
+print(crosstab2)
+crosstab2.plot(kind = 'bar', stacked = True)
+
+fig = plt.figure(figsize=(15,9))
+crosstab2=pd.crosstab(data["education"],data["under_over"], normalize='index', margins=False)*100
+print(crosstab2)
+crosstab2.plot(kind = 'bar', stacked = True)
+
+fig = plt.figure(figsize=(15,9))
+crosstab2=pd.crosstab(data["education_num"],data["under_over"], normalize='index', margins=False)*100
+print(crosstab2)
+crosstab2.plot(kind = 'bar', stacked = True)
+
+fig = plt.figure(figsize=(15,9))
+crosstab2=pd.crosstab(data["marital_status"],data["under_over"], normalize='index', margins=False)*100
+print(crosstab2)
+crosstab2.plot(kind = 'bar', stacked = True)
+
+fig = plt.figure(figsize=(15,9))
+crosstab2=pd.crosstab(data["occupation"],data["under_over"], normalize='index', margins=False)*100
+print(crosstab2)
+crosstab2.plot(kind = 'bar', stacked = True)
+
+fig = plt.figure(figsize=(15,9))
+crosstab2=pd.crosstab(data["relationship"],data["under_over"], normalize='index', margins=False)*100
+print(crosstab2)
+crosstab2.plot(kind = 'bar', stacked = True)
+
+fig = plt.figure(figsize=(15,9))
+crosstab2=pd.crosstab(data["race"],data["under_over"], normalize='index', margins=False)*100
+print(crosstab2)
+crosstab2.plot(kind = 'bar', stacked = True)
+
+fig = plt.figure(figsize=(15,9))
+crosstab2=pd.crosstab(data["sex"],data["under_over"], normalize='index', margins=False)*100
+print(crosstab2)
+crosstab2.plot(kind = 'bar', stacked = True)
+
+plt.figure(figsize=(12, 8))
+sns.boxplot(x="fnlwgt", y="under_over", data=data)
+plt.show()
+
+plt.figure(figsize=(12, 8))
+sns.boxplot(x="capital_gain", y="under_over", data=data)
+plt.show()
+
+plt.figure(figsize=(12, 8))
+sns.boxplot(x="capital_loss", y="under_over", data=data)
+plt.show()
+
+plt.figure(figsize=(12, 8))
+sns.boxplot(x="hours_pw", y="under_over", data=data)
+plt.show()
+
+
+box plots to identify outliers
+num_feat = data.select_dtypes(include=['int64']).columns
+for i in range(6):
+   plt.subplot(2,3,i+1)
+   plt.boxplot(data[num_feat[i]])
+   plt.title(num_feat[i],color="g",fontsize=22)
+   plt.yticks(fontsize=15)
+   plt.xticks(fontsize=15)
+plt.show()
+
+removing outliers through winsorization
+from scipy.stats.mstats import winsorize
+data["age"]           = winsorize(data["age"],(0,0.15))
+data["fnlwgt"]        = winsorize(data["fnlwgt"],(0,0.15))
+data["capital_gain"]  = winsorize(data["capital_gain"],(0,0.099))
+data["capital_loss"]  = winsorize(data["capital_loss"],(0,0.099))
+data["hours_pw"]      = winsorize(data["hours_pw"],(0.12,0.18))
+
+plt.rcParams['figure.figsize'] = (25,7)
+
+baslik_font = {'family':'arial','color':'red','weight':'bold','size':25}
+
+col_list=['age',"fnlwgt",'capital_gain', 'capital_loss', 'hours_pw']
+
+for i in range(5):
+   plt.subplot(1,5,i+1)
+   plt.boxplot(data[col_list[i]])
+   plt.title(col_list[i],fontdict=baslik_font)
+
+plt.show()
+
+data.head(10)
+
+numerical = ['int64']
+numericData = data.select_dtypes(include=numerical) #organise numerical data to be parsed separately
+
+categorical = ['object']
+categoricData = data.select_dtypes(include=categorical) #organise categorical data to be parsed separately
+
+print(numericData.describe()) #describe numerical dataset and return min/max/std etc
+print("Mode", categoricData.mode()) #display mode (most frequent attributes)
